@@ -7,7 +7,7 @@ library(LaplacesDemon)
 
 
 ## read data 
-sur_sim <- "/nfs/ihfs/home_metis/fluan"
+sur_sim <- "your path"
 df <- get(load(paste(sur_sim, "Simulated 10,000.RData", sep = '/')))
 
 ftrue <- get(load(paste(sur_sim, "True F.RData", sep = '/')))
@@ -66,7 +66,7 @@ K <- getK(Tm)
 ##########################
 ###### run simulation ####
 ##########################
-df_final <- df[8001:10000]
+df_final <- df[1:10000]
 nsim <- length(df_final)
 
 
